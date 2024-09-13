@@ -41,7 +41,6 @@ public class Ob1 {
 			
 			System.out.println("Error");
 		}
-		
 		//if setninger
 		
 		//if Karakter er mellom 100 og 90 print A
