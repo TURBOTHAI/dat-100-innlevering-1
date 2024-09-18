@@ -5,8 +5,20 @@ import static java.lang.Integer.parseInt;
 public class Ob2 {
 
     public class OppgaveB6 {
-        public static void main(String[] args) {
+    	public static void main(String[] args) {
+    		sammenRegning();
+    		
+    		
+    	
+    		
+    		
+    	}
+        public static void sammenRegning() {
+        	
+        	
             for (int i = 1; i <= 10; i++) {
+            	int kunde=0;
+            	int kundeT=i+kunde;
                 int Bruttoinntekt;
                 double t1 = 0.0;
                 double t2 = 0.0;
@@ -15,11 +27,12 @@ public class Ob2 {
                 double t5 = 0.0;
 
                 while (true) {
+                	System.out.println("kundenummer"+""+kundeT);
                     Bruttoinntekt = parseInt(showInputDialog("Skriv inn Bruttoinntekten:"));
 
                     if (Bruttoinntekt >= 0 && Bruttoinntekt <= 1000000000) {
                         break;
-                    } else {
+                    } else { 
                         System.out.println("Error, skriv inn på nytt");
                     }
                 }
@@ -47,6 +60,7 @@ public class Ob2 {
 
                 // Totalt trinnskatt
                 double totalSkatt = t1 + t2 + t3 + t4 + t5;
+                
                 System.out.println(String.format("%.2f KR - Totalt trinnskatt", totalSkatt));
             }
         }
